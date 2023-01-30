@@ -1,0 +1,50 @@
+.ellipsis {
+  border: 0 !important;
+}
+
+.selected {
+  background-color: #00aeec;
+  color: white;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.show {
+  display: block;
+}
+
+#page {
+  position: relative;
+  left: 200px;
+  display: flex;
+
+  & > div {
+    margin: 0 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding-top: 5px;
+    border-radius: 3px;
+  }
+
+  .exact-page {
+    display: flex;
+    border: 0;
+    padding: 0;
+  }
+
+  .exact-page > div {
+    display: flex;
+  }
+
+  .exact-page > div > div {
+    display:none;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 3px;
+  }
+}

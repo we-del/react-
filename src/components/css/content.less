@@ -1,0 +1,42 @@
+.user-message-show {
+  position:relative;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  .parallel-line{
+    position: absolute;
+    top:35px;
+    height: 2px;
+    width: 100%;
+    background-color: #a0d911;
+  }
+  .upper-part {
+    display:flex;
+    justify-content: end;
+    flex: 1;
+    .user-message{
+      padding-right:10px;
+      span{
+        margin-right: 10px;
+
+      }
+    }
+  }
+  .lower-part{
+    position: relative;
+    flex:1;
+    .page-hint{
+      font-size: 20px;
+    }
+    .triangle-header{
+      position: absolute;
+      top:40px;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top: 20px solid #fff;
+    }
+  }
+}
